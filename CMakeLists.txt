@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.18.4)
+project(linear-regression)
+find_package(SDL2 REQUIRED)
+include_directories(${SDL2_INCLUDE_DIRS})
+add_executable(linear-regression main.cpp)
+target_link_libraries(linear-regression ${SDL2_LIBRARIES})
